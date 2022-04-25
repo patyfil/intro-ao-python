@@ -33,7 +33,7 @@ minha_lista = list(range(0, 10, 2))
 print("minha_lista: " + str(minha_lista))
 print()
 
-# Para gerar índices em cada item de uma lsita, existe a função enumerate
+# Para gerar índices em cada item de uma lista, existe a função enumerate
 print('índice | item')
 print('------ | ----')
 for i, item in enumerate(minha_lista):
