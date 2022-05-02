@@ -1,3 +1,4 @@
+# Desafio 2 - Strings
 # 1. Pergunte ao usuário em qual cidade e o estado em que ele(a) mora
 nome = input('Qual é o seu nome?')
 cidade = input('Qual é a sua cidade que você mora?')
