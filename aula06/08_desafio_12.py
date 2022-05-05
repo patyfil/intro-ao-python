@@ -2,9 +2,7 @@
 # os registros desse CSV para o formato JSON. 
 # Escreva um arquivo de saída que contenha o conteúdo em JSON.
 import csv
-from encodings import utf_8
 import json
-from os import sep
 
 with open('exemplo2.csv', 'r') as arquivo:
     leitor_csv = csv.DictReader(arquivo)
