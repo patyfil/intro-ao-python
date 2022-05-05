@@ -2,16 +2,20 @@
 # os registros desse CSV para o formato JSON. 
 # Escreva um arquivo de saída que contenha o conteúdo em JSON.
 import csv
+from encodings import utf_8
 import json
+from os import sep
 
-with open('exemplo2.csv', mode='r') as arquivo:
+with open('exemplo2.csv', 'r') as arquivo:
     leitor_csv = csv.DictReader(arquivo)
-    Dict = []
+    dict = []
     for registro in leitor_csv:
-        Dict.append(registro)
+        dict.append (registro)
+    # for i, cont in enumerate(leitor_csv):
+    #     dict[i + 1] = cont
 
-with open('./saida_desafio_12.json', 'w', encoding='utf8') as arquivo_json:
-    json.dump(Dict, arquivo_json)
+    with open('./saida_desafio_12.json', 'w') as arquivo_json:
+        json.dump(dict, arquivo_json, ensure_ascii=False, indent=4)
     # arquivo_json = json.dumps(Dict)
     # print(arquivo_json)
 
