@@ -1,3 +1,6 @@
+# Desafio 11 - Ler e escrever em arquivos
+
+
 # Dado um arquivo de entrada, escreva um programa que leia o conteudo do arquivo para uma string,
 # e escreva um outro arquivo de saída que imprima o texto ao contrário.
 # Exemplo de entrada: Oi mulheres maravilhosas do curso de Python do ConstruDelas!
