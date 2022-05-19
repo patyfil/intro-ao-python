@@ -22,5 +22,5 @@ if int(resposta.status_code) == 200:
 URL = 'https://httpbin.org/delete'
 resposta = requests.delete(URL)
 if int(resposta.status_code) == 200:
-    conteudo = json.loads(resposta.text)
+    conteudo = json.loads(resposta.text)    
     print(conteudo)
