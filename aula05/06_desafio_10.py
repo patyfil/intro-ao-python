@@ -1,5 +1,5 @@
-# Código referente ao desafio 10 no Mentimeter - apenas para referência, não é necessário
-# fazer nada neste arquivo
+# Código referente ao desafio 10 no Mentimeter - apenas para referência, 
+# não é necessário fazer nada neste arquivo
 import sys
 
 def main():
