@@ -23,7 +23,7 @@
 
 #   ANOTAÇÕES
 
-# Para fazer uma cópia identica:
+# Para fazer uma cópia idêntica:
 # from shutil import copyfile
 # copyfile('./entrada_desafio_11.txt', './saida_desafio_11.txt')
 
