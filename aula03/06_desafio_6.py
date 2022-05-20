@@ -12,16 +12,17 @@ alunas = ['Adriana', 'Bárbara', 'Franciele', 'Laís', 'Maria',
 notas = [78, 57, 80, 98, 54, 89, 90, 100, 71, 85]
 
 # Comece o programa perguntando o nome da aluna.
-procurar = input("Digite seu nome para saber sua nota:")
+nome_aluna = input("Digite seu nome para saber sua nota: ")
+nome_aluna = nome_aluna.title()
 
 # Procure o nome digitado na lista de nomes e imprima uma mensagem com a nota que ela tirou.
 # Notas abaixo de 60 devem ser impressas com a cor vermelha, e notas a partir de 90 devem ser
 # impressas com a cor verde.
 # Se o nome digitado não existir na lista, imprima uma mensagem de erro usando a cor vermelha.
 
-if procurar in alunas:
+if nome_aluna in alunas:
     for i, aluna in enumerate(alunas):
-        if aluna == procurar:
+        if aluna == nome_aluna:
             if notas[i] < 60:
                 print(f'A aluna {aluna} tirou: ' + colorama.Fore.RED + str(
                     notas[i]) + colorama.Style.RESET_ALL + '\nQue Pena, não Desista!')
@@ -33,4 +34,4 @@ if procurar in alunas:
                     notas[i]) + colorama.Style.RESET_ALL + '\nParabéns, continue assim!')
 else:
     print(colorama.Fore.RED +
-            f'ERRO - O Nome {procurar} não está na lista' + colorama.Style.RESET_ALL)
+            f'ERRO - O Nome {nome_aluna} não está na lista' + colorama.Style.RESET_ALL)
