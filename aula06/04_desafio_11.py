@@ -39,9 +39,11 @@
 def novo_arq():
     with open('./entrada_desafio_11.txt', 'r') as arq1:
         texto = arq1.read()
+        # print(texto[::-1])
+
     with open('./saida_desafio_11.txt', 'w') as arq3:
         arq3.write(texto[::-1])
     return arq3
-def main():
-    novo_arq()
-main()
+    
+novo_arq()
+
