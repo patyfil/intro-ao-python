@@ -3,7 +3,6 @@
 import time
 
 # Crie um decorator que calcule o tempo de execução de uma determinada função
-
 def calcula_duracao(funcao):
     def wrapper():
         # Calcula o tempo de execução
@@ -19,7 +18,6 @@ def calcula_duracao(funcao):
 
 # Aplique seu decorator na função abaixo e veja quanto tempo
 # a busca de um mesmo valor em um set e uma lista demoram para serem executadas
-
 def encontrar_item(container, item):
     return item in container
 
@@ -32,7 +30,6 @@ def main():
     item = 500399
     encontrar_item(set_grande, item)
     encontrar_item(lista_grande, item)
-
 
 if __name__ == '__main__':
     main()
